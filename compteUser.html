@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>compte</title>
+</head>
+<body>
+
+    <div class="div"></div>
+    <script>
+        // Récupérer l'e-mail de l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+
+        // Utiliser l'e-mail comme vous le souhaitez dans votre page "compteUser.html"
+        console.log(email);
+        document.querySelector(".div").innerHTML = "hello " + email;
+
+    </script>
+</body>
+</html>
